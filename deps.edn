@@ -1,5 +1,6 @@
 ;; see https://github.com/seancorfield/dot-clojure
-{:mvn/repos {"sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}}
+{:mvn/repos {"sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}
+             "cognitect-dev-tools" {:url "https://dev-tools.cognitect.com/maven/releases/"}}
  :aliases
  {;; jar installation and deployment:
   ;; - see https://github.com/slipset/deps-deploy
