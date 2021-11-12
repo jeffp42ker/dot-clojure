@@ -2,7 +2,10 @@
 {:mvn/repos {"sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}
              "cognitect-dev-tools" {:url "https://dev-tools.cognitect.com/maven/releases/"}}
  :aliases
- {;; jar installation and deployment:
+ {;; My additional aliases
+  :nREPL {:extra-deps {nrepl/nrepl {:mvn/version "0.8.3"}
+                       cider/piggieback {:mvn/version "0.4.2"}}}
+  ;; jar installation and deployment:
   ;; - see https://github.com/slipset/deps-deploy
   ;;   - clj -X:deploy :artifact '"project.jar"'
   ;; - this relies on having a pom.xml file and, for deployment, these two
